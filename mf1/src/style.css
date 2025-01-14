@@ -1,8 +1,90 @@
-.mf1 {
-    border: 2px solid #7CB9E8;
-    height: 50%;
-    width: 50%;
+/* General container styling */
+div {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styling */
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input field styling */
+  input[type="text"] {
+    width: calc(100% - 90px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Task container */
+  .task-item {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-}
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .task-item:last-of-type {
+    border-bottom: none;
+  }
+  
+  /* Checkbox styling */
+  input[type="checkbox"] {
+    margin-left: 15px;
+  }
+  
+  /* Result button styling */
+  button:last-of-type {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #28a745;
+  }
+  
+  button:last-of-type:hover {
+    background-color: #218838;
+  }
+
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .task-item input[type="checkbox"] {
+    margin-left: 10px;
+  }
+  
+  

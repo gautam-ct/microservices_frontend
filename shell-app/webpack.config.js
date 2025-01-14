@@ -44,6 +44,7 @@ module.exports = {
       shared : {
         "react" : {
           singleton:true,
+          devtool: 'source-map',
         }
       }
     })

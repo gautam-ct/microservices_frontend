@@ -1,24 +1,27 @@
 import React, { useContext } from 'react';
 
-import Style from './style.css';
+import './style.css';
 
 
-const App = ({countCompleted , countIncompleted}) => {
+const App = ({countCompleted , countIncompleted , showResults }) => {
 
 
   // const [count_completed , count_incompleted] = useContext(SharedContext);
   return (
     <div>
-      <div className={'mf2'}>
-      
-
-        <p>Completed_task : {countCompleted}</p>
-        <p>Incompleted_task : {countIncompleted}</p>
-      </div>
-      
+      {/* Other content */}
+      {showResults && (
+        <div className="results-container">
+          <div className="mf2">
+            <p>Completed Task: {countCompleted}</p>
+            <p>Incompleted Task: {countIncompleted}</p>
+          </div>
+        </div>
+      )}
     </div>
-    
   );
+  
+  
 };
 
 export default App;

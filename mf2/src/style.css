@@ -1,8 +1,31 @@
-.mf2 {
-    border: 2px solid #EF0107;
-    height: 50%;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.results-container {
+    margin: 20px auto;
+    padding: 15px;
+    width: 80%;
+    max-width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mf2 {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .mf2 p {
+    margin: 10px 0;
+  }
+  
+  .mf2 p:first-child {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .mf2 p:last-child {
+    font-weight: bold;
+    color: #dc3545;
+  }
+  
